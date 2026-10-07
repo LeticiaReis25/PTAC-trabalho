@@ -1,19 +1,60 @@
-# React + Vite
+# Painel de Ideias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React para organizar ideias de forma simples e prática. O usuário pode adicionar novas ideias, marcar ideias como concluídas e remover aquelas que não deseja mais manter no painel.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Painel de Ideias foi desenvolvido utilizando React e Vite.
 
-## React Compiler
+A aplicação possui uma interface simples e responsiva, permitindo que o usuário gerencie uma lista de ideias diretamente pela tela.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+As ideias são armazenadas no estado da aplicação utilizando o `useState` do React.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Adicionar novas ideias
+- Marcar ideias como concluídas
+- Desmarcar ideias concluídas
+- Remover ideias
+- Exibir mensagem de erro quando o campo está vazio
+- Exibir a quantidade total de ideias
+- Exibir a quantidade de ideias concluídas
+- Interface responsiva para dispositivos menores
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias utilizadas
+
+- React 19
+- React DOM
+- Vite
+- JavaScript
+- CSS3
+- ESLint
+
+## Interface
+
+A aplicação possui um painel centralizado com:
+
+- Título "Painel de Ideias"
+- Campo para inserir uma nova ideia
+- Botão para adicionar a ideia
+- Lista de ideias cadastradas
+- Checkbox para marcar uma ideia como concluída
+- Botão para remover uma ideia
+- Contador de ideias e ideias concluídas
+
+Quando uma ideia é concluída, o texto recebe um efeito de tachado para indicar visualmente seu status.
+
+A interface também possui comportamento responsivo para telas menores.
+
+## Estrutura do projeto
+
+```text
+ptac-trabalho/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── ...
+├── package.json
+├── package-lock.json
+└── README.md
