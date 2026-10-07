@@ -46,12 +46,16 @@ function App() {
         <input
           type="text"
           value={novaIdeia}
-          onChange={(event) => setNovaIdeia(event.target.value)}
+          onChange={(event) => {setNovaIdeia(event.target.value);
+                              setErro("");
+          }}
           placeholder="Digite uma ideia..."
         />
 
         <button type="submit">Adicionar</button>
       </form>
+      
+      {erro && <p>{erro}</p>}
 
       <ul>
   {ideias.map((ideia) => (
